@@ -62,7 +62,6 @@ section {
     margin: 2em 0;
     .name {
         font-size: 1.5rem;
-        font-weight: 600;
     }
     .location {
         color: var(--ui-green);
