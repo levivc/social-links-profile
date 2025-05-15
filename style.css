@@ -106,11 +106,11 @@ nav {
     bottom: 0;
     margin-bottom: 1em;
     display: none;
-    a {
-        color: var(--ui-green);
-        &:visited {
-            color: var(--ui-purple);
-        }
+    a:link {
+        color: var(--ui-green)
+    }
+    a:visited {
+        color: var(--ui-purple);
     }
 }
 
