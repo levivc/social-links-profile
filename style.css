@@ -98,19 +98,20 @@ nav {
     }
 }
 
-/* @media (min-width: 1440px) {
-    main {
-        width: 384px;
-        padding: 2.5rem;
-    }
-} */
-
-/*
 .attribution {
-    font-size: 11px;
+    font-size: 0.6875rem; /* 11px; */
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+    display: none;
+    a {
+        color: var(--ui-green);
+    }
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-} */
+@media (min-height: 670px) {
+    .attribution {
+        display: block;
+    }
+}
