@@ -107,10 +107,13 @@ nav {
     display: none;
     a {
         color: var(--ui-green);
+        &:visited {
+            color: #5D2AF8;
+        }
     }
 }
 
-@media (min-height: 670px) {
+@media (min-height: 41.875rem) { /* 670px */
     .attribution {
         display: block;
     }
