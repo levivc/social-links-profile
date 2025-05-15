@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format('truetype');
+}
+
+:root {
+    --ui-green: hsl(75, 94%, 57%);
+    --ui-grey-700: hsl(0, 0%, 20%);
+    --ui-grey-800: hsl(0, 0%, 12%);
+    --ui-grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--ui-grey-900);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+}
+
+main {
+    /* Evaluates to 20.4375rem (327px) for a 375px wide viewport,
+       and 24rem (384px) for 1440px */
+    width: calc(19.183rem + 5.352vi);
+    /* Evaluates to 1.75rem for a 375px wide viewport,
+       and 2.5rem for 1440px */
+    padding: calc(1.486rem + 1.127vi);
+
+    background-color: var(--ui-grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.75rem; /* 12px; */
+}
+
+header {
+    margin-bottom: 1.65em;
+    img {
+        border-radius: 50%;
+        width: 5.625rem; /* 90px; */
+    }
+}
+
+section {
+    font-style: normal;
+    margin: 2em 0;
+    .name {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .location {
+        color: var(--ui-green);
+        margin-top: 0.85em;
+    }
+    .name, .location {
+        font-weight: 600;
+    }
+}
+
+nav {
+    width: 100%;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin-top: 1.15em;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    a {
+        background-color: var(--ui-grey-700);
+        border-radius: 0.667rem; /* 8px; */
+        display: block;
+        padding: 1em;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        &:hover, &:focus {
+            background-color: var(--ui-green);
+            color: var(--ui-grey-800);
+        }
+    }
+}
+
+/* @media (min-width: 1440px) {
+    main {
+        width: 384px;
+        padding: 2.5rem;
+    }
+} */
+
+/*
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
